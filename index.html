@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem dos sonhos</title>
+</head>
+<body>
+    <header class="container-fluid p-2 bg-primary text-center">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Viagem dos sonhos</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Pacotes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Preços</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Fale com a gente!
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <h1 >Venha realizar a viagem dos seus sonhos!</h1>
+    </header>
+    <section id="Pacotes" class="container-fluid bg-light text-center">
+        <h2>Conheça nossos pacotes</h2>
+        <p>Texto aleatório...<br></p>
+        <div class="row">
+            <figure class="col text-center">
+                <img src="AvPaulista.jpg" alt="Avenida Paulista vista de cima">
+                <figcaption>Avenida Paulista vista de cima</figcaption>
+            </figure>
+            <figure class="col text-center">
+                <img src="brasil1.jpg" alt="Cristo Redentor, braços abertos sobre a Guanabara">
+                <figcaption>Cristo Redentor, braços abertos sobre a Guanabara</figcaption>
+            </figure>
+            <figure class="col text-center">
+                <img src="dji_0206-pano.jpg" alt="Vista aérea, CPA Cuiabá">
+                <figcaption>Vista aérea, CPA Cuiabá</figcaption>
+            </figure>
+        </div>
+<!--
+        <div class="Videos">
+            <video controls>
+                <source src="video/FB_VID_3476295528588076376.mp4" type="video/mp4">
+                Seu navegador não suporta o formato do vídeo <a href="video/FB_VID_3476295528588076376.mp4">Clique aqui para baixar</a>
+            </video>   
+        </div>       
+-->
+    </section>
+    <br>
+    <section class="container-fluid bg-light text-center">
+        <h2>Confira nossos preços</h2>
+        <table class="table table-primary table-striped table-hover table-bordered">
+            <thead class="table-dark">
+                <th>Destino</th>
+                <th>Valor</th>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <td>São Paulo</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td>R$ 2.000,00</td>
+                </tr>
+                <tr>
+                    <td>Cuiabá</td>
+                    <td>R$ 1.500,00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>*Sujeito a alterações</td>
+                </tr>
+            </tfoot>    
+        </table>
+    </section>
+    <br>
+    <section class="container-fluid bg-light">
+        <h3>Contato</h3>
+        <form method="GET" action="">
+            <fieldset>
+                <legend>Dados do cliente</legend>         
+                <div class="mb-3">
+                    <label class="form-label" for="nome">Nome</label>
+                    <input type="text" class="form-control" name="nome" id="nome">
+                </div>       
+                <div class="mb-3">
+                    <label class="form-label" for="email">Email</label>
+                    <input type="email" class="form-control" name="email" placeholder="email@xyz.com" id="email">
+                </div>       
+                <legend>Destinos de interesse:</legend>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="sp" value="sp" id="sp">
+                    <label class="form-check-label" for="sp">São Paulo</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="rj" value="rj" id="rj">
+                    <label class="form-check-label" for="rj">Rio de Janeiro</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="cb" value="cb" id="cb">
+                    <label class="form-check-label" for="cb">Cuiabá</label>
+                </div>
+                <legend>Dados da viagem:</legend>
+                <div class="mb-3">
+                    <label class="form-label" for="dataIda">Data de ida</label>
+                    <input type="date" class="form-control" name="dataIda" id="dataIda">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="dataVolta">Data de volta</label>
+                    <input type="date" class="form-control" name="dataVolta" id="dataVolta">
+                </div>
+            </fieldset>
+            <button class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+    <hr>
+    <footer class="container-fluid bg-primary">
+        Desenvolvido por CarlosHNC
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
